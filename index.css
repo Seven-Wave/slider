@@ -1,0 +1,131 @@
+@import url(
+'https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    border: 0;
+    overflow: hidden;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border: 0;
+}
+
+.slider ul {
+    padding: 0;
+}
+
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slider__item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider__item img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 60px;
+    outline: none;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url("/images/left.svg") 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url("/images/right.svg") 0 0 / 100% no-repeat;
+
+}
+
+.slider .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    right: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0 10px;
+}
+.slider .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    outline: none;
+    border: 0;
+}
+
+.slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.slider__card {
+    background: #581286;
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+    right: 30px;
+    z-index: 10;
+    padding: 12px 25px;
+    overflow: hidden;
+}
+
+.slider__card h1 {
+    text-transform: uppercase ;
+    font-weight: lighter;
+    color: white;
+    padding: 0 0 0 30px;
+    border-left: 2px solid yellow;
+}
+
+.slider .overview {
+    overflow: auto;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 10550;
+    padding: 12px;
+}
+
+.close {
+    width: 40px;
+    height: 40px;
+    padding: 20px 20px;
+}
